@@ -2,7 +2,7 @@ import { useAuth } from '../contexts/AuthContext'
 import { useNavigate, useLocation } from 'react-router-dom'
 
 export default function DashboardPage() {
-  const { user, business, signOut } = useAuth()
+  const { business, signOut } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
 
